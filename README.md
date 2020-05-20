@@ -1,11 +1,5 @@
 Big Data - Project
 ----------------------
-**Team Members** 
-
-Name    | NetID
--------- | ---
-Miti Anish Jhaveri | maj529
-Rigved Ravindra Kale | rrk320
 
 Analyzing NYPD Crime Complaint Data (Historic)
 

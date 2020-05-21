@@ -19,10 +19,7 @@ def initialize_spark_session():
     if spark is not None:
         return
     spark = SparkSession.builder.appName('S3CSVRead').getOrCreate()
-
-    accessKeyId="AKIAJYEHZOGXDALZ2KJQ"
-    secretAccessKey="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"
-
+    
     spark._jsc.hadoopConfiguration().set("fs.s3a.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem")
     spark._jsc.hadoopConfiguration().set("fs.s3a.awsAccessKeyId", accessKeyId)
     spark._jsc.hadoopConfiguration().set("fs.s3a.awsSecretAccessKey", secretAccessKey)
